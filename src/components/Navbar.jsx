@@ -59,7 +59,7 @@ const Navbar = ({ setCurrentPage, currentPage }) => {
   return (
     <div className={`fixed w-full z-50 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
       <div>
-        <div className="flex flex-row justify-between p-5 md:px-32 px-5 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+        <div className=" flex flex-row justify-between text-white p-5 md:px-32 px-5 bg-[#0a1a25]/50 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
             <img src={logo} alt="Logo" className="h-10" />
             <h1 className="text-xl font-semibold text-[#dd8036] ml-2" onClick={handleHomeClick}>
@@ -137,7 +137,7 @@ const Navbar = ({ setCurrentPage, currentPage }) => {
         </div>
         <div
           className={`${menu ? "translate-x-0" : "-translate-x-full"
-            } lg:hidden flex flex-col absolute bg-white text-black left-0 top-20 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+            } lg:hidden flex flex-col absolute bg-white text-black left-0 top-20 font-medium text-base sm:text-xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           <div className="hover:text-[#dd8036] transition-all cursor-pointer" onClick={handleHomeClick}>
             Home

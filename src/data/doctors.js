@@ -1,13 +1,13 @@
-import img from "../assets/img/doc1.jpg";
-import img1 from "../assets/img/doc2.jpg";
-import img2 from "../assets/img/doc3.jpg";
-import img3 from "../assets/img/doc4.jpg";
-import img4 from "../assets/img/doc5.jpg";
+import doc1 from "../assets/img/doc1.jpg";
+import doc2 from "../assets/img/doc2.jpg";
+import doc3 from "../assets/img/doc3.jpg";
+import doc4 from "../assets/img/doc4.jpg";
+import doc5 from "../assets/img/doc5.jpg";
 
 const doctors = [
   {
     id: 1,
-    img: img,
+    img: doc1,
     name: "Dr. Serena Mitchell",
     specialties: "Orthopedic Surgeon",
     education: "MD, Harvard Medical School",
@@ -19,7 +19,7 @@ const doctors = [
   },
   {
     id: 2,
-    img: img1,
+    img: doc2,
     name: "Dr. Julian Bennett",
     specialties: "Cardiologist",
     education: "MD, Johns Hopkins University",
@@ -31,7 +31,7 @@ const doctors = [
   },
   {
     id: 3,
-    img: img2,
+    img: doc3,
     name: "Dr. Camila Rodriguez",
     specialties: "Pediatrician",
     education: "MD, Stanford University School of Medicine",
@@ -43,7 +43,7 @@ const doctors = [
   },
   {
     id: 4,
-    img: img3,
+    img: doc4,
     name: "Dr. Victor Nguyen",
     specialties: "Neurologist",
     education: "MD, Yale School of Medicine",
@@ -55,7 +55,7 @@ const doctors = [
   },
   {
     id: 5,
-    img: img4,
+    img: doc5,
     name: "Dr. Ethan Carter",
     specialties: "Dermatologist",
     education: "MD, University of California, San Francisco",
@@ -67,7 +67,7 @@ const doctors = [
   },
   {
     id: 6,
-    img: img,
+    img: doc4,
     name: "Dr. Olivia Martinez",
     specialties: "Ophthalmologist",
     education: "MD, Columbia University College of Physicians and Surgeons",
@@ -79,7 +79,7 @@ const doctors = [
   },
   {
     id: 7,
-    img: img,
+    img: doc3,
     name: "Dr. Marcus Wei",
     specialties: "Gastroenterologist",
     education: "MD, Duke University School of Medicine",
@@ -91,7 +91,7 @@ const doctors = [
   },
   {
     id: 8,
-    img: img1,
+    img: doc1,
     name: "Dr. Sophia Patel",
     specialties: "Endocrinologist",
     education: "MD, University of Pennsylvania",
@@ -103,7 +103,7 @@ const doctors = [
   },
   {
     id: 9,
-    img: img2,
+    img: doc2,
     name: "Dr. James Wilson",
     specialties: "Psychiatrist",
     education: "MD, Washington University School of Medicine",
@@ -115,7 +115,7 @@ const doctors = [
   },
   {
     id: 10,
-    img: img3,
+    img: doc3,
     name: "Dr. Aisha Johnson",
     specialties: "Rheumatologist",
     education: "MD, Mayo Clinic School of Medicine",
@@ -127,7 +127,7 @@ const doctors = [
   },
   {
     id: 11,
-    img: img4,
+    img: doc4,
     name: "Dr. Robert Kim",
     specialties: "Pulmonologist",
     education: "MD, Northwestern University Feinberg School of Medicine",
@@ -139,7 +139,7 @@ const doctors = [
   },
   {
     id: 12,
-    img: img,
+    img: doc5,
     name: "Dr. Elena Vasquez",
     specialties: "Nephrologist",
     education: "MD, University of Michigan Medical School",

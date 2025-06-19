@@ -7,12 +7,12 @@ const FloatingChatButton = () => {
 
     return (
         <div className="fixed bottom-5 right-5 z-50">
-            <button
+            {/* <button
                 onClick={() => setIsOpen(true)}
-                className="bg-[#dd8036] hover:bg-[#794318] text-white p-4 rounded-full shadow-lg transition"
+                className="bg-[#dd8036] hover:bg-[#794318] text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110"
             >
                 <AiFillWechat size={35} />
-            </button>
+            </button> */}
 
             <ChatbotPopup isOpen={isOpen} onClose={() => setIsOpen(false)} />
         </div>

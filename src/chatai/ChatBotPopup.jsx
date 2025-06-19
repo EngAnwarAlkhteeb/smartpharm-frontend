@@ -70,10 +70,10 @@ export default function ChatbotWidget() {
             {/* Floating Chat Icon - Toggles the chat panel */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-[#dd8036] hover:bg-[#794318] text-white p-4 rounded-full shadow-lg transition-transform hover:scale-110"
+                className="bg-[#dd8036] hover:bg-[#794318] text-white p-3 rounded-full shadow-lg transition-transform hover:scale-110"
                 aria-label="Toggle Chat Assistant"
             >
-                <AiFillWechat size={35} />
+                <AiFillWechat size={33} />
             </button>
 
             {/* Chat Modal / Panel - Appears when isOpen is true */}

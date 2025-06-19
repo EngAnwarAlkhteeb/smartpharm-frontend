@@ -23,7 +23,7 @@ const ContactUs = () => {
       ...formData,
       [name]: value
     });
-    
+
     // Clear error when field is being edited
     if (formErrors[name]) {
       setFormErrors({
@@ -35,43 +35,43 @@ const ContactUs = () => {
 
   const validateForm = () => {
     const errors = {};
-    
+
     if (!formData.firstName.trim()) errors.firstName = 'First name is required';
     if (!formData.lastName.trim()) errors.lastName = 'Last name is required';
-    
+
     if (!formData.email.trim()) {
       errors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       errors.email = 'Email is invalid';
     }
-    
+
     if (!formData.phone.trim()) {
       errors.phone = 'Phone number is required';
     } else if (!/^\d{10}$/.test(formData.phone.replace(/[^0-9]/g, ''))) {
       errors.phone = 'Phone number must be 10 digits';
     }
-    
+
     if (!formData.date) errors.date = 'Date is required';
     if (!formData.time) errors.time = 'Time is required';
     if (!formData.reason) errors.reason = 'Reason is required';
-    
+
     return errors;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const errors = validateForm();
-    
+
     if (Object.keys(errors).length > 0) {
       setFormErrors(errors);
       return;
     }
-    
+
     // Form is valid, submit it
     console.log('Form submitted:', formData);
     setIsSubmitted(true);
-    
+
     // Reset form after submission
     setFormData({
       firstName: '',
@@ -107,7 +107,7 @@ const ContactUs = () => {
         {/* Contact Information */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
-          
+
           <div className="space-y-6">
             <div className="flex items-start">
               <div className="bg-blue-100 p-3 rounded-full mr-4">
@@ -115,33 +115,33 @@ const ContactUs = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
-                <p className="text-gray-600">+1 (555) 987-6543</p>
+                <p className="text-gray-600">+62 851-8689-6757</p>
+                <p className="text-gray-600">+62 853-9411-5111</p>
               </div>
             </div>
-            
+
             <div className="flex items-start">
               <div className="bg-blue-100 p-3 rounded-full mr-4">
                 <FaEnvelope className="text-blue-500" />
               </div>
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-600">info@smartpharm.com</p>
-                <p className="text-gray-600">support@smartpharm.com</p>
+                <p className="text-gray-600">ak2211.g@gmail.com</p>
+                <p className="text-gray-600">anwarlama22@gmail.com</p>
               </div>
             </div>
-            
+
             <div className="flex items-start">
               <div className="bg-blue-100 p-3 rounded-full mr-4">
                 <FaMapMarkerAlt className="text-blue-500" />
               </div>
               <div>
                 <h3 className="font-semibold">Location</h3>
-                <p className="text-gray-600">123 Health Avenue</p>
-                <p className="text-gray-600">Medical District, NY 10001</p>
+                <p className="text-gray-600">Jalan Malino</p>
+                <p className="text-gray-600">Dalam Kampus Unhas, Gowa, Indonesia</p>
               </div>
             </div>
-            
+
             <div className="flex items-start">
               <div className="bg-blue-100 p-3 rounded-full mr-4">
                 <FaClock className="text-blue-500" />
@@ -149,12 +149,12 @@ const ContactUs = () => {
               <div>
                 <h3 className="font-semibold">Working Hours</h3>
                 <p className="text-gray-600">Monday - Friday: 8:00 AM - 8:00 PM</p>
-                <p className="text-gray-600">Saturday: 9:00 AM - 5:00 PM</p>
+                <p className="text-gray-600">Saturday: 10:00 AM - 5:00 PM</p>
                 <p className="text-gray-600">Sunday: 10:00 AM - 2:00 PM</p>
               </div>
             </div>
           </div>
-          
+
           <div className="mt-8 p-6 bg-blue-50 rounded-lg">
             <h3 className="font-semibold text-lg mb-2 flex items-center">
               <FaCalendarCheck className="mr-2 text-blue-500" />
@@ -163,7 +163,7 @@ const ContactUs = () => {
             <p className="text-gray-700">
               For medical emergencies, please call our 24/7 hotline:
               <br />
-              <span className="font-semibold text-blue-700">+1 (555) 911-0000</span>
+              <span className="font-semibold text-blue-700">+62 851-8689-6757</span>
             </p>
           </div>
         </div>
@@ -179,7 +179,7 @@ const ContactUs = () => {
               <p className="text-gray-600 mb-6">
                 Thank you for booking an appointment with SmartPharm. We have received your request and will confirm your appointment shortly via email.
               </p>
-              <button 
+              <button
                 onClick={() => setIsSubmitted(false)}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-md transition duration-300"
               >
@@ -189,7 +189,7 @@ const ContactUs = () => {
           ) : (
             <>
               <h2 className="text-2xl font-semibold mb-6">Book an Appointment</h2>
-              
+
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
@@ -199,15 +199,14 @@ const ContactUs = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        formErrors.firstName ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.firstName ? 'border-red-500' : 'border-gray-300'
+                        }`}
                     />
                     {formErrors.firstName && (
                       <p className="text-red-500 text-xs mt-1">{formErrors.firstName}</p>
                     )}
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
                     <input
@@ -215,16 +214,15 @@ const ContactUs = () => {
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        formErrors.lastName ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.lastName ? 'border-red-500' : 'border-gray-300'
+                        }`}
                     />
                     {formErrors.lastName && (
                       <p className="text-red-500 text-xs mt-1">{formErrors.lastName}</p>
                     )}
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
@@ -233,15 +231,14 @@ const ContactUs = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        formErrors.email ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.email ? 'border-red-500' : 'border-gray-300'
+                        }`}
                     />
                     {formErrors.email && (
                       <p className="text-red-500 text-xs mt-1">{formErrors.email}</p>
                     )}
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
                     <input
@@ -249,16 +246,15 @@ const ContactUs = () => {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        formErrors.phone ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.phone ? 'border-red-500' : 'border-gray-300'
+                        }`}
                     />
                     {formErrors.phone && (
                       <p className="text-red-500 text-xs mt-1">{formErrors.phone}</p>
                     )}
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
@@ -268,15 +264,14 @@ const ContactUs = () => {
                       value={formData.date}
                       onChange={handleChange}
                       min={new Date().toISOString().split('T')[0]}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        formErrors.date ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.date ? 'border-red-500' : 'border-gray-300'
+                        }`}
                     />
                     {formErrors.date && (
                       <p className="text-red-500 text-xs mt-1">{formErrors.date}</p>
                     )}
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
                     <input
@@ -284,25 +279,23 @@ const ContactUs = () => {
                       name="time"
                       value={formData.time}
                       onChange={handleChange}
-                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                        formErrors.time ? 'border-red-500' : 'border-gray-300'
-                      }`}
+                      className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.time ? 'border-red-500' : 'border-gray-300'
+                        }`}
                     />
                     {formErrors.time && (
                       <p className="text-red-500 text-xs mt-1">{formErrors.time}</p>
                     )}
                   </div>
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Reason for Appointment</label>
                   <select
                     name="reason"
                     value={formData.reason}
                     onChange={handleChange}
-                    className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                      formErrors.reason ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${formErrors.reason ? 'border-red-500' : 'border-gray-300'
+                      }`}
                   >
                     <option value="">Select a reason</option>
                     {appointmentReasons.map((reason) => (
@@ -315,7 +308,7 @@ const ContactUs = () => {
                     <p className="text-red-500 text-xs mt-1">{formErrors.reason}</p>
                   )}
                 </div>
-                
+
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Additional Information (Optional)</label>
                   <textarea
@@ -326,7 +319,7 @@ const ContactUs = () => {
                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   ></textarea>
                 </div>
-                
+
                 <div className="pt-2">
                   <Button title="Book Appointment" />
                 </div>
@@ -335,16 +328,26 @@ const ContactUs = () => {
           )}
         </div>
       </div>
-      
+
       {/* Map */}
       <div className="mt-12 bg-white p-4 rounded-lg shadow-lg">
         <h2 className="text-2xl font-semibold mb-4">Find Us</h2>
-        <div className="h-80 bg-gray-200 rounded-lg flex items-center justify-center">
-          <p className="text-gray-500">Map will be displayed here</p>
+        <div className="h-80 rounded-lg overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.5280953242814!2d119.5003580745185!3d-5.233158652676677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee1c3e6c0d009%3A0x57d307ae6dbd20e3!2sTeknik%20Elektro%2C%20UNHAS!5e1!3m2!1sen!2sid!4v1750355950326!5m2!1sen!2sid"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
+
     </div>
   );
+
 };
 
 export default ContactUs;
