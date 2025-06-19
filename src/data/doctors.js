@@ -15,7 +15,7 @@ const doctors = [
     bio: "Dr. Serena Mitchell is a board-certified orthopedic surgeon specializing in sports medicine and joint replacement. She has performed over 1,000 successful surgeries and is known for her minimally invasive techniques that promote faster recovery times. Dr. Mitchell is an active researcher in the field of regenerative medicine for orthopedic applications.",
     languages: ["English", "Spanish"],
     availability: "Monday, Wednesday, Friday",
-    contact: "+1 (555) 123-4567",
+    contact: "+628251234567",
   },
   {
     id: 2,
