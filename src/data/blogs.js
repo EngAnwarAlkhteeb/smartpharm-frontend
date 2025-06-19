@@ -1,9 +1,9 @@
-import img from '../../public/blog1.jpg'
-import img1 from '../../public/blog2.jpg'
-import img2 from '../../public/blog3.jpg'
-import img3 from '../../public/blog4.jpg'
-import img4 from '../../public/blog5.jpg'
-import img5 from '../../public/blog6.jpg'
+import img from '../assets/img/blog1.jpg'
+import img1 from '../assets/img/blog2.jpg'
+import img2 from '../assets/img/blog3.jpg'
+import img3 from '../assets/img/blog4.jpg'
+import img4 from '../assets/img/blog5.jpg'
+import img5 from '../assets/img/blog6.jpg'
 
 
 const blogs = [

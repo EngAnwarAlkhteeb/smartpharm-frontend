@@ -67,7 +67,7 @@ const doctors = [
   },
   {
     id: 6,
-    img: img5,
+    img: img,
     name: "Dr. Olivia Martinez",
     specialties: "Ophthalmologist",
     education: "MD, Columbia University College of Physicians and Surgeons",
@@ -139,7 +139,7 @@ const doctors = [
   },
   {
     id: 12,
-    img: img5,
+    img: img,
     name: "Dr. Elena Vasquez",
     specialties: "Nephrologist",
     education: "MD, University of Michigan Medical School",
