@@ -1,3 +1,11 @@
+import img from '../assets/img/blog1.jpg'
+import img1 from '../assets/img/blog2.jpg'
+import img2 from '../assets/img/blog3.jpg'
+import img3 from '../assets/img/blog4.jpg'
+import img4 from '../assets/img/blog5.jpg'
+import img5 from '../assets/img/blog6.jpg'
+
+
 const blogs = [
   {
     id: 1,
@@ -5,7 +13,7 @@ const blogs = [
     author: "Dr. Sarah Mitchell",
     date: "June 10, 2024",
     category: "Medical Innovations",
-    image: "/src/assets/img/blog1.jpg",
+    image: img,
     summary: "Discover how quality sleep affects your body and ways to improve it.",
     content: `
 # 5 Medical Breakthroughs That Changed Healthcare in 2024
@@ -65,7 +73,7 @@ At SmartPharm, we remain committed to keeping our community informed about the l
     author: "Dr. Michael Chen",
     date: "May 25, 2024",
     category: "Nutrition",
-    image: "/src/assets/img/blog2.jpg",
+    image: img1,
     summary: "Learn about foods that promote cardiovascular health and energy.",
     content: `
 # The Heart-Healthy Diet: Foods That Protect Your Cardiovascular System
@@ -191,7 +199,7 @@ Remember that consistency matters more than perfection. Small, sustainable chang
     author: "Dr. Emily Rodriguez",
     date: "April 18, 2024",
     category: "Child Health",
-    image: "/src/assets/img/blog3.jpg",
+    image: img2,
     summary: "Everything parents need to know about vaccines and child immunity.",
     content: `
 # Understanding Pediatric Vaccinations: A Guide for Parents
@@ -299,7 +307,7 @@ By staying informed with evidence-based information and maintaining open communi
     author: "Dr. James Wilson",
     date: "March 22, 2024",
     category: "Mental Health",
-    image: "/src/assets/img/blog4.jpg",
+    image: img3,
     summary: "Tips and insights on managing stress, anxiety, and emotional wellness.",
     content: `
 # Navigating Mental Health: Breaking Stigmas and Finding Support
@@ -433,7 +441,7 @@ Remember that seeking help for mental health challenges is not a sign of weaknes
     author: "Dr. Lisa Thompson",
     date: "February 15, 2024",
     category: "Fitness",
-    image: "/src/assets/img/blog5.jpg",
+    image: img4,
     summary: "Why staying active matters and how to build a simple workout routine.",
     content: `
 # The Importance of Regular Exercise: Building a Sustainable Fitness Routine
@@ -615,7 +623,7 @@ Remember that consistency matters more than intensity. A moderate routine you ca
     author: "Dr. Robert Kim",
     date: "January 8, 2024",
     category: "Medication Management",
-    image: "/src/assets/img/blog6.jpg",
+    image: img5,
     summary: "From hydration to SPF — how to keep your skin healthy every day.",
     content: `
 # Medication Adherence: 9 Effective Strategies for Taking Your Medications Correctly
