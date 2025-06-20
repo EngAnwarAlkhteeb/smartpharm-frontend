@@ -31,7 +31,7 @@ export default function ChatbotWidget() {
 
         try {
             // Your existing fetch logic to communicate with Rasa
-            const response = await fetch("https://7eb1-180-246-132-224.ngrok-free.app/webhooks/rest/webhook", {
+            const response = await fetch("https://12a2-2404-c0-4340-00-10af-24e.ngrok-free.app/webhooks/rest/webhook", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
