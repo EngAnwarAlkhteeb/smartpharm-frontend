@@ -47,7 +47,7 @@ const ContactUs = () => {
 
     if (!formData.phone.trim()) {
       errors.phone = 'Phone number is required';
-    } else if (!/^\d{10}$/.test(formData.phone.replace(/[^0-9]/g, ''))) {
+    } else if (!/^\d{12}$/.test(formData.phone.replace(/[^0-9]/g, ''))) {
       errors.phone = 'Phone number must be 10 digits';
     }
 
