@@ -31,7 +31,7 @@ export default function ChatbotWidget() {
 
         try {
             // Your existing fetch logic to communicate with Rasa
-            const response = await fetch("http://127.0.0.1:5005/webhooks/rest/webhook", {
+            const response = await fetch("https://8b85-180-246-132-224.ngrok-free.app/webhooks/rest/webhook", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -101,10 +101,10 @@ export default function ChatbotWidget() {
                             messages.map((msg, index) => (
                                 <div key={index} className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"}`}>
                                     <div className={`text-sm rounded-lg inline-block max-w-[85%] whitespace-pre-line px-3 py-2 shadow-sm ${msg.sender === "user"
-                                            ? "bg-[#A67C52] text-white"
-                                            : msg.message === "__typing__"
-                                                ? "bg-gray-200 text-gray-500 italic"
-                                                : "bg-gray-100 text-gray-800"
+                                        ? "bg-[#A67C52] text-white"
+                                        : msg.message === "__typing__"
+                                            ? "bg-gray-200 text-gray-500 italic"
+                                            : "bg-gray-100 text-gray-800"
                                         }`}>
                                         {msg.message === "__typing__" ? "SmartPharm is typing..." : msg.message}
                                     </div>
@@ -128,8 +128,8 @@ export default function ChatbotWidget() {
                             onClick={sendMessage}
                             disabled={!userMessage.trim() || loading} // Disable button if no message or while loading
                             className={`px-4 py-2 rounded-md font-medium text-white transition-colors ${!userMessage.trim() || loading
-                                    ? "bg-gray-400 cursor-not-allowed"
-                                    : "bg-[#A67C52] hover:bg-[#7B5D4F]"
+                                ? "bg-gray-400 cursor-not-allowed"
+                                : "bg-[#A67C52] hover:bg-[#7B5D4F]"
                                 }`}
                         >
                             Send
